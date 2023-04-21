@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM Login</title>
+</head>
+<body>
+	<h1>ATM Login</h1>
+	<form>
+		<label for="account">Account Number:</label>
+		<input type="text" id="account" name="account"><br><br>
+		<label for="pin">PIN:</label>
+		<input type="password" id="pin" name="pin"><br><br>
+		<button type="button" onclick="login()">Login</button>
+	</form>
+
+	<script>
+		function login() {
+			var account = document.getElementById("account").value;
+			var pin = document.getElementById("pin").value;
+			if (account == "123456789" && pin == "1222") {
+				alert("Login successful!");
+            }
+                else if (account=="987654321"&&pin=="1234"){
+                    alert("Login Successful")
+                 }
+
+			 else {
+				alert("Incorrect account number or PIN. Please try again.");
+			}
+		}
+	</script>
+</body>
+</html>
